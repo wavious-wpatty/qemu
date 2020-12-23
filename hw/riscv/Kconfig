@@ -63,3 +63,12 @@ config SPIKE
     select MSI_NONBROKEN
     select SIFIVE_CLINT
     select SIFIVE_PLIC
+
+config WAVIOUS_HOST
+    bool
+    select SIFIVE_CLINT
+    select SIFIVE_PLIC
+    select SIFIVE_UART
+    select SIFIVE_GPIO
+    select WHOST_DMA
+    select UNIMP
